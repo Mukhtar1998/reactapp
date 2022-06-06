@@ -6,7 +6,7 @@ function Counter(){
     const [ countertwo, setCountertwo] = useState(5) 
     return (
         <div className="counter">
-            <div>NUMBER {counterone}</div>
+            <div>{counterone}</div>
             <button onClick={() => {setCounterone(counterone + 10)}}>+</button>
             <button onClick={() => {setCounterone(counterone - 10)}}>-</button>
             <div className="counter">{countertwo}</div>
