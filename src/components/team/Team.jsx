@@ -1,88 +1,22 @@
 import React from 'react'
+import Item3 from './Item3'
 
 function Team(props) {
     return(
-        <div className="team" style={{
-            // backgroundColor: props.bg2,
-            border: props.borderb,
-            padding: props.padding1
-         }}>
-              <div className="pre" style={{
-                textAlign: props.ai,
-             }}>
-             <p>EXPERT INTSRUCTORS</p>
-             <h1 style={{
-                color: props.btnc,
-             }}>Meet Our Team</h1>
-             </div>
-            <div className="parents"style={{
-                 display: props.flex,
-                 flexDirection: props.flexd,
-                 padding: props.padding,
-                 justifyContent: props.jcd,
-                 gap: props.gap,
-                 position: props.absalout,
-                 marginTop: props.mt,
-                 marginBottom: props.mb
-             }}>
-            <div className="item1" style={{
-                display: props.flex,
-                border: props.border,
-                alignItems: props.ai,
-                flexDirection: props.flexdirection,
-                backgroundColor: props.itbg,
-                padding: props.pi
-
-
-             }}>
-                <img src="./p1.jpg" alt="Lisa Mokovic" width="250px"  />
-                <h3>Lisa Mokovic</h3>
-                <p>Health Coacher</p>
-                <p>Aliquam eleifend maximus libero bibendum hendrerit. Sed diam dui, dictum vel mauris id, tincidunt gravida leo.</p>
-            </div>
-            <div className="item2" style={{
-                display: props.flex,
-                border: props.border,
-                alignItems: props.ai,
-                flexDirection: props.flexdirection,
-                backgroundColor: props.itbg,
-                padding: props.pi
-
-             }}>
-                <img src="./p2.jpg" alt="Jason Moran" width="250px"  />
-                <h3>Jason Moran</h3>
-                <p>Yoga Trainer</p>
-                <p>Aliquam eleifend maximus libero bibendum hendrerit. Sed diam dui, dictum vel mauris id, tincidunt gravida leo.</p>
-            </div>  <div className="item3" style={{
-                display: props.flex,
-                border: props.border,
-                alignItems: props.ai,
-                flexDirection: props.flexdirection,
-                backgroundColor: props.itbg,
-                padding: props.pi
-
-
-             }}>
-                <img src="./p3.jpg" alt="Kiana Chapman" width="250px" />
-                <h3>Kiana Chapman</h3>
-                <p>Yoga Trainer</p>
-                <p>Aliquam eleifend maximus libero bibendum hendrerit. Sed diam dui, dictum vel mauris id, tincidunt gravida leo.</p>
-            </div>
-            </div>
-            <div className="btn" style={{
-               textAlign: props.ai
-             }}>
-             <input style={{
-                padding: props.btnp ,
-                borderRadius: props.br,
-                color: props.btnc,
-                border: props.btnb,
-             }} 
-             type="button" value="VIEW ALL"  />
-             </div>
-
+        <div className="team">
+        <div className="text">
+         <p>EXPERT INTSRUCTORS</p>
+         <h1 className='classesh1'>Meet Our Team</h1>
+         </div>
+        <div className="three-grid-team">
+         <Item3 imgurl="/p1.jpg" height="278px" width="278px" heading="Lisa Mokovic" ptext="Health Coacher" blurb="Aliquam eleifend maximus libero bibendum hendrerit. Sed diam dui, dictum vel mauris id, tincidunt gravida leo." />
+         <Item3 imgurl="/p2.jpg"  height="278px" width="278px" heading="Jason Moran" blurb="Aliquam eleifend maximus libero bibendum hendrerit. Sed diam dui, dictum vel mauris id, tincidunt gravida leo. "/>
+         <Item3 imgurl="/p3.jpg"  height="278px" width="278px" heading="Kiana Chapman" blurb="Aliquam eleifend maximus libero bibendum hendrerit. Sed diam dui, dictum vel mauris id, tincidunt gravida leo."/>
+         </div>
+         <input className='classesbtn' type="button" value="VIEW ALL" />
         </div>
-    )
+
+        )
 }
 
 export default Team
